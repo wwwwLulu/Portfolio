@@ -1,0 +1,35 @@
+.contact {
+    max-width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    &__heading {
+        margin: 5rem 0;
+    }
+
+    &__form {
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60rem;
+    }
+    &__message {
+        height: 10rem;
+    }
+    &__textarea {
+        min-height: 10rem;
+    }
+    &__button {
+        position: relative;
+        border: none;
+        padding: 1rem 1.5rem;
+        background: $color-secondary;
+        color: $color-primary;
+        border-radius: 10rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}

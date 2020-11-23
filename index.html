@@ -91,6 +91,7 @@
                 <ul class="skills__list">
                     <li>NodeJS</li>
                     <li>Networking</li>
+                    <li>SQL </li>
                 </ul>
             </div>
 
@@ -103,7 +104,25 @@
                 </ul>
             </div>
         </div>
+    </section>
 
+    <section class="contact" id="contact">
+        <h2 class="contact__heading heading text-secondary">Contact</h2>
+
+        <form class="contact__form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <p class="hidden" hidden>
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <p>
+              <label class="contact__email">Email: <input type="text" name="email" /></label>
+            </p>
+            <p>
+              <label class="contact__message">Message: <textarea class="contact__textarea" name="message"></textarea></label>
+            </p>
+            <p>
+              <button class="contact__button" type="submit">Send</button>
+            </p>
+          </form>
     </section>
 </body>
 </html>

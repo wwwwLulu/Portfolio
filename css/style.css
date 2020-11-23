@@ -16,6 +16,22 @@ a {
   a:visited {
     color: #000; }
 
+button {
+  font-family: 'Poppins', sans-serif; }
+
+form label {
+  font-size: 1.6rem; }
+
+form input, form textarea {
+  font-family: 'Poppins', sans-serif;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  border-bottom: 0.5rem solid #000;
+  outline: none;
+  width: 100%;
+  min-height: 3rem; }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -265,3 +281,31 @@ body {
     flex-direction: column; }
   .skills__category {
     margin-bottom: 4rem; } }
+
+.contact {
+  max-width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .contact__heading {
+    margin: 5rem 0; }
+  .contact__form {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60rem; }
+  .contact__message {
+    height: 10rem; }
+  .contact__textarea {
+    min-height: 10rem; }
+  .contact__button {
+    position: relative;
+    border: none;
+    padding: 1rem 1.5rem;
+    background: #000;
+    color: #ffe15f;
+    border-radius: 10rem;
+    font-size: 1.5rem;
+    cursor: pointer; }

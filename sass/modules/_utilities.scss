@@ -19,3 +19,22 @@ a {
         color: $color-secondary;
     }
 }
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+form label {
+    font-size: 1.6rem;
+}
+
+form input, form textarea {
+    font-family: 'Poppins', sans-serif;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    border-bottom: .5rem solid $color-secondary;
+    outline: none;
+    width: 100%;
+    min-height: 3rem;
+}
