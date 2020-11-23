@@ -81,8 +81,8 @@
     &__github {
         position: absolute;
         font-size: 4.5rem;
-        bottom: 1rem;
-        left: 1rem;
+        bottom: 2rem;
+        left: 2rem;
         transition: all 1s;
 
         &:hover {
@@ -99,6 +99,15 @@
         background: rgba($color-secondary, 0.8);
         &__body {
             padding: 2rem;
+        }
+    }
+}
+
+@media(max-width: 850px) {
+    .about {
+        &__github {
+            left: 8rem;
+            bottom: 8rem;
         }
     }
 }
