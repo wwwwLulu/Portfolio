@@ -1,0 +1,40 @@
+.skills {
+    max-width: 100vw;
+    min-height: 50vh;
+    background: $color-secondary;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__heading {
+        margin: 5rem 0;
+    }
+    &__container {
+        display: flex;
+        text-align: center;
+    }
+    &__category {
+        // min-height: 20rem;
+        min-width: 40rem;
+    }
+    &__label {
+        font-size: 2.4rem;
+        text-decoration: underline;
+    }
+    &__list {
+        font-size: 1.7rem;
+        list-style: none;
+    }
+}
+
+@media(max-width: 1150px) {
+    .skills {
+        &__container {
+            flex-direction: column;
+        }
+        &__category {
+            margin-bottom: 4rem;
+        }
+    }
+}

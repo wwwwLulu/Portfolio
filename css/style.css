@@ -237,3 +237,31 @@ body {
   .about__github {
     left: 3rem;
     bottom: 3rem; } }
+
+.skills {
+  max-width: 100vw;
+  min-height: 50vh;
+  background: #000;
+  color: #ffe15f;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .skills__heading {
+    margin: 5rem 0; }
+  .skills__container {
+    display: flex;
+    text-align: center; }
+  .skills__category {
+    min-width: 40rem; }
+  .skills__label {
+    font-size: 2.4rem;
+    text-decoration: underline; }
+  .skills__list {
+    font-size: 1.7rem;
+    list-style: none; }
+
+@media (max-width: 1150px) {
+  .skills__container {
+    flex-direction: column; }
+  .skills__category {
+    margin-bottom: 4rem; } }
