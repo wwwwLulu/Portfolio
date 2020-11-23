@@ -1,0 +1,104 @@
+.header {
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/header_background.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+}
+
+.about {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    background: black;
+    width: 80rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    
+    &__avatar {
+        border: .5rem solid $color-primary;
+        border-radius: 50%;
+        width: 13rem;
+        height: 13rem;
+        position: relative;
+    }
+
+    &__img {
+        border-radius: inherit;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__body {
+        padding: 5rem;
+        // width: 80%;
+        color: $color-white;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    &__button {
+        position: relative;
+        border: none;
+        padding: 1.5rem 2.1rem;
+        background: $color-primary;
+        border-radius: 10rem;
+        font-size: 2.5rem;
+        transition: all .5s;
+
+        &::after{
+            z-index: -1;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            border-radius: 100px;
+            background: white;
+            position: absolute;
+            top: .5rem;
+            left: .5rem;
+        }
+        &:active, &:focus {
+            outline: none;
+            border: none;
+        }
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.01);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        &:active {
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            font-size: 1.95rem;
+        }
+    }
+    &__github {
+        position: absolute;
+        font-size: 4.5rem;
+        bottom: .5rem;
+        left: .5rem;
+        transition: all 1s;
+
+        &:hover {
+            cursor: pointer;
+            color: $color-white;
+            transform: scale(0.98);
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .about {
+        width: 100vw;
+        background: rgba($color-secondary, 0.8);
+        &__body {
+            padding: 2rem;
+        }
+    }
+}
