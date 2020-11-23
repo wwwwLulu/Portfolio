@@ -7,7 +7,7 @@
 
 .heading {
   font-size: 3.5rem;
-  background-image: linear-gradient(to bottom, #ffe15f, #000);
+  background-image: linear-gradient(to top right, #ffe15f, #000);
   display: inline-block;
   background-clip: text;
   -webkit-background-clip: text;
@@ -196,7 +196,7 @@ body {
     background: #ffe15f;
     border-radius: 10rem;
     font-size: 2.5rem;
-    transition: all .5s; }
+    transition: all .1s; }
     .about__button::after {
       z-index: -1;
       content: "";
