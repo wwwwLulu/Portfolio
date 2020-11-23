@@ -1,6 +1,7 @@
 .projects {
+    z-index: 1;
     max-width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     border-top: .1rem solid $color-secondary;
     display: flex;
     align-items: center;
@@ -8,5 +9,97 @@
 
     &__heading {
         margin: 5rem;
+    }
+    &__card-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    } 
+
+    .card {
+        margin: 4rem;
+        position: relative;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2rem;
+        width: 30rem;
+        height: 50rem;
+        background: $color-primary;
+        border: .4rem solid $color-secondary;
+        
+        &::before {
+            border-radius: inherit;
+            z-index: -1;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 100%;
+            background: $color-secondary;
+            position: absolute;
+            top: -2rem;
+            left: 2rem;
+        }
+
+        &__title {
+            color: $color-secondary;
+            font-size: 2rem;
+            letter-spacing: .2rem;
+            margin: 1rem 0;
+        }
+
+        &__img-container {
+            position: relative;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            width: 100%;
+            height: 20rem;
+            background: pink;
+        }
+        &__img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            object-fit: cover;
+            object-position: center;
+        }
+        &__description {
+            margin: 1rem 0;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        &__github {
+            position: absolute;
+            left: 2rem;
+            bottom: 2rem;
+            font-size: 1.5rem;
+            i {
+                margin-right: .5rem;
+            }
+        }
+        &__live-demo {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media(max-width: 1150px) {
+    .projects {
+        &__card-container {
+            flex-direction: column;
+        }
+    }
+    .card {
+        width: 85%;
+        height: 20rem;
     }
 }

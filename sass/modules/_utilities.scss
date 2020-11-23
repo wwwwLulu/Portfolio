@@ -2,6 +2,10 @@
     color: $color-primary;
 }
 
+.text-secondary {
+    color: $color-secondary;
+}
+
 .heading {
     font-size: 3.5rem;
     background-image: linear-gradient(to bottom, $color-primary, $color-secondary);
@@ -11,4 +15,11 @@
     color: transparent;
     letter-spacing: 2px;
     transition: all .2s;
+}
+
+a {
+    color: $color-secondary;
+    &:visited {
+        color: $color-secondary;
+    }
 }

@@ -2,6 +2,9 @@
 .text-primary {
   color: #ffe15f; }
 
+.text-secondary {
+  color: #000; }
+
 .heading {
   font-size: 3.5rem;
   background-image: linear-gradient(to bottom, #ffe15f, #000);
@@ -11,6 +14,11 @@
   color: transparent;
   letter-spacing: 2px;
   transition: all .2s; }
+
+a {
+  color: #000; }
+  a:visited {
+    color: #000; }
 
 html {
   font-size: 65%;
@@ -29,6 +37,90 @@ body {
 @media (max-width: 850px) {
   html {
     font-size: 50%; } }
+
+.projects {
+  z-index: 1;
+  max-width: 100vw;
+  min-height: 100vh;
+  border-top: 0.1rem solid #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .projects__heading {
+    margin: 5rem; }
+  .projects__card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem; }
+  .projects .card {
+    margin: 4rem;
+    position: relative;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    width: 30rem;
+    height: 50rem;
+    background: #ffe15f;
+    border: 0.4rem solid #000; }
+    .projects .card::before {
+      border-radius: inherit;
+      z-index: -1;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: #000;
+      position: absolute;
+      top: -2rem;
+      left: 2rem; }
+    .projects .card__title {
+      color: #000;
+      font-size: 2rem;
+      letter-spacing: .2rem;
+      margin: 1rem 0; }
+    .projects .card__img-container {
+      position: relative;
+      border-radius: 1rem;
+      margin: 1rem 0;
+      width: 100%;
+      height: 20rem;
+      background: pink; }
+    .projects .card__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+      object-position: center; }
+    .projects .card__description {
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 1.4rem; }
+    .projects .card__github {
+      position: absolute;
+      left: 2rem;
+      bottom: 2rem;
+      font-size: 1.5rem; }
+      .projects .card__github i {
+        margin-right: .5rem; }
+    .projects .card__live-demo {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      font-size: 1.5rem; }
+
+@media (max-width: 1150px) {
+  .projects__card-container {
+    flex-direction: column; }
+  .card {
+    width: 85%;
+    height: 20rem; } }
 
 .header {
   z-index: -1;
@@ -118,13 +210,3 @@ body {
   .about__github {
     left: 3rem;
     bottom: 3rem; } }
-
-.projects {
-  max-width: 100vw;
-  height: 100vh;
-  border-top: 0.1rem solid #000;
-  display: flex;
-  align-items: center;
-  flex-direction: column; }
-  .projects__heading {
-    margin: 5rem; }
