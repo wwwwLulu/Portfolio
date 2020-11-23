@@ -2,6 +2,7 @@
 
 html {
     font-size: 65%;
+    scroll-behavior: smooth;
 }
 
 *, *::after, *::before {
@@ -11,6 +12,7 @@ html {
 }
 
 body {
+    max-width: 100vw;
     background: $color-primary;
     font-family: 'Poppins', sans-serif;
 }

@@ -2,8 +2,19 @@
 .text-primary {
   color: #ffe15f; }
 
+.heading {
+  font-size: 3.5rem;
+  background-image: linear-gradient(to bottom, #ffe15f, #000);
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s; }
+
 html {
-  font-size: 65%; }
+  font-size: 65%;
+  scroll-behavior: smooth; }
 
 *, *::after, *::before {
   margin: 0;
@@ -11,6 +22,7 @@ html {
   box-sizing: border-box; }
 
 body {
+  max-width: 100vw;
   background: #ffe15f;
   font-family: 'Poppins', sans-serif; }
 
@@ -20,7 +32,7 @@ body {
 
 .header {
   z-index: -1;
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   background-image: url("../images/header_background.png");
   background-attachment: fixed;
@@ -106,3 +118,13 @@ body {
   .about__github {
     left: 3rem;
     bottom: 3rem; } }
+
+.projects {
+  max-width: 100vw;
+  height: 100vh;
+  border-top: 0.1rem solid #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .projects__heading {
+    margin: 5rem; }
