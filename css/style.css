@@ -87,8 +87,8 @@ body {
   .about__github {
     position: absolute;
     font-size: 4.5rem;
-    bottom: .5rem;
-    left: .5rem;
+    bottom: 1rem;
+    left: 1rem;
     transition: all 1s; }
     .about__github:hover {
       cursor: pointer;
