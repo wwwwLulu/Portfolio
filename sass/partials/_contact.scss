@@ -33,3 +33,11 @@
         cursor: pointer;
     }
 }
+
+@media(max-width: 680px) {
+    .contact {
+        &__form {
+            width: 90%;
+        }
+    }
+}
