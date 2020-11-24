@@ -1,0 +1,23 @@
+.footer {
+    max-width: 100vw;
+    min-height: 5vh;
+    background: $color-secondary;
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    &__github {
+        margin: 2rem;
+        color: $color-primary;
+        font-size: 3rem;
+        transition: all 1s;
+
+        &:hover {
+            cursor: pointer;
+            color: $color-white;
+            transform: scale(0.95);
+        }
+    }
+    &__copyright {
+        font-size: 1.8rem;
+    }
+}

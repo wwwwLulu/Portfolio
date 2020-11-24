@@ -27,6 +27,11 @@
         height: 13rem;
         position: relative;
         animation: slideFromRight 1.4s ease-out;
+        transition: all .5s;
+
+        &:hover {
+            transform: rotate(360deg);
+        }
     }
 
     &__img {
@@ -86,7 +91,7 @@
         font-size: 4.5rem;
         bottom: 2rem;
         left: 2rem;
-        transition: all 1s;
+        transition: all .5s;
         animation: fadeIn 1.4s ease-out;
 
         &:hover {
