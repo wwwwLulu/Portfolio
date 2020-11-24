@@ -300,7 +300,7 @@ body {
   .contact__message {
     height: 10rem; }
   .contact__textarea {
-    min-height: 10rem; }
+    min-height: 16rem; }
   .contact__button {
     position: relative;
     border: none;
