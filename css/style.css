@@ -145,8 +145,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
-    .navigation__list:hover .navigation__item:not(:hover) {
-      transform: scale(0.9); }
   .navigation__item {
     width: 0;
     margin: 2.5rem;
@@ -156,10 +154,8 @@ body {
     color: var(--color-secondary);
     text-decoration: none;
     cursor: pointer;
-    outline-offset: 2rem;
     transition: all .2s; }
     .navigation__item:hover {
-      outline: 0.5rem solid var(--color-secondary);
       transform: scale(1.05) translateY(-0.5rem); }
   .navigation__link {
     text-decoration: none; }

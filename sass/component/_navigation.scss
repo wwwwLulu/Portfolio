@@ -80,9 +80,6 @@
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
-        &:hover .navigation__item:not(:hover) {
-            transform: scale(.9);
-        }
     }
 
     &__item {
@@ -94,11 +91,9 @@
         color: var(--color-secondary);
         text-decoration: none;
         cursor: pointer;
-        outline-offset: 2rem;
         transition: all .2s;
 
         &:hover {
-            outline: .5rem solid var(--color-secondary);
             transform: scale(1.05) translateY(-.5rem);
         }
     }
