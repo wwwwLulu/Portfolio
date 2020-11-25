@@ -1,12 +1,14 @@
-// Modules
-@import "modules/variables";
-@import "modules/utilities";
-@import "modules/animations";
+// Utility used all over the place
+@import "utility/variables";
+@import "utility/utilities";
+@import "utility/animations";
 
-// Partials
-@import "partials/base";
-@import "partials/projects";
-@import "partials/header";
-@import "partials/skills";
-@import "partials/contact";
-@import "partials/footer";
+// Component Different sections of the page
+@import "component/base";
+@import "component/projects";
+@import "component/header";
+@import "component/skills";
+@import "component/contact";
+@import "component/footer";
+
+// Vender -3rd Party Code
