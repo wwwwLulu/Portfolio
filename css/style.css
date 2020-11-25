@@ -182,20 +182,24 @@ body {
     top: 6rem;
     left: 6rem;
     z-index: 3010;
-    height: 3rem;
-    display: flex; }
+    display: flex;
+    flex-direction: row; }
   .navigation__theme {
     border-bottom: .1rem solid black;
     border-right: .1rem solid black;
     width: 3rem;
     height: 3rem;
     border-radius: .5rem;
-    margin: 0 .6rem;
+    margin: .6rem;
     cursor: pointer; }
     .navigation__theme--1 {
       background: #ffe15f; }
     .navigation__theme--2 {
       background: #78a0d3; }
+
+@media (max-width: 850px) {
+  .navigation__themes {
+    flex-direction: column; } }
 
 .projects {
   z-index: 1;
