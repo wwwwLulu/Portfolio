@@ -1,5 +1,6 @@
 const nav_theme = document.querySelectorAll('.navigation__theme')
 const root = document.documentElement;
+const curtain = document.querySelector(".curtain")
 
 const themes = [
     //Black and Yellow
@@ -22,6 +23,10 @@ nav_theme.forEach(theme => {
     theme.addEventListener('click', (e) => {
         root.style.setProperty("--color-primary", themes[e.target.id].primary);
         root.style.setProperty("--color-secondary", themes[e.target.id].secondary);    
-        root.style.setProperty("--background-img", themes[e.target.id].background);    
+        root.style.setProperty("--background-img", themes[e.target.id].background);  
+        curtain.classList.add('animate');
+        setTimeout( () => {
+            curtain.classList.remove('animate')
+        },500)
     })
 })

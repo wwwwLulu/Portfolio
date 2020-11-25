@@ -39,6 +39,17 @@ form input, form textarea {
   width: 100%;
   min-height: 3rem; }
 
+.curtain {
+  background: var(--color-primary);
+  z-index: 8000;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%); }
+
+.curtain.animate {
+  animation: slideFromRightAllTheWay .5s linear; }
+
 @keyframes fadeIn {
   0% {
     opacity: 0; }
@@ -64,6 +75,12 @@ form input, form textarea {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+@keyframes slideFromRightAllTheWay {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(-100%); } }
 
 html {
   font-size: 65%;
@@ -190,6 +207,7 @@ body {
     height: 3rem;
     border-radius: .5rem;
     margin: .6rem;
+    transition: all 1s;
     cursor: pointer; }
     .navigation__theme--1 {
       background: #ffe15f; }

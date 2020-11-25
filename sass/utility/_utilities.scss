@@ -38,3 +38,16 @@ form input, form textarea {
     width: 100%;
     min-height: 3rem;
 }
+
+.curtain {
+    background: var(--color-primary);
+    z-index: 8000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+}
+
+.curtain.animate {
+    animation: slideFromRightAllTheWay .5s linear;
+}
