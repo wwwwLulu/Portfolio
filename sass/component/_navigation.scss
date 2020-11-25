@@ -10,6 +10,9 @@
         opacity: 1;
         width: 100%;
     }
+    &__checkbox:checked ~ &__item {
+        width: 100%;
+    }
     &__button {
         text-align: center;
         background-color: var(--color-primary);
@@ -83,6 +86,7 @@
     }
 
     &__item {
+        width: 0;
         margin: 2.5rem;
         letter-spacing: .2rem;
         font-size: 3rem;

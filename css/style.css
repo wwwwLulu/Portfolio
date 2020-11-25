@@ -92,6 +92,8 @@ body {
   .navigation__checkbox:checked ~ .navigation__nav {
     opacity: 1;
     width: 100%; }
+  .navigation__checkbox:checked ~ .navigation__item {
+    width: 100%; }
   .navigation__button {
     text-align: center;
     background-color: var(--color-primary);
@@ -146,6 +148,7 @@ body {
     .navigation__list:hover .navigation__item:not(:hover) {
       transform: scale(0.9); }
   .navigation__item {
+    width: 0;
     margin: 2.5rem;
     letter-spacing: .2rem;
     font-size: 3rem;
