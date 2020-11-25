@@ -1,9 +1,9 @@
 .text-primary {
-    color: $color-primary;
+    color: var(--color-primary);
 }
 
 .text-secondary {
-    color: $color-secondary;
+    color: var(--color-secondary);
 }
 
 .heading {
@@ -14,9 +14,9 @@
 }
 
 a {
-    color: $color-secondary;
+    color: var(--color-secondary);
     &:visited {
-        color: $color-secondary;
+        color: var(--color-secondary);
     }
 }
 
@@ -33,7 +33,7 @@ form input, form textarea {
     padding: .5rem 1rem;
     border: none;
     border-radius: 1rem;
-    border-bottom: .5rem solid $color-secondary;
+    border-bottom: .5rem solid var(--color-secondary);
     outline: none;
     width: 100%;
     min-height: 3rem;

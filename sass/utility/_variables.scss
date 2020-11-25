@@ -1,3 +1,7 @@
-$color-primary: #ffe15f;
-$color-secondary: rgb(34, 34, 34);
-$color-white: #fff;
+:root {
+    --color-primary: #78a0d3;
+    --color-secondary: #2b3a59;
+    --color-white: #fff;
+    --background-img: url('../images/header_background2.jpg');
+    --color-secondary-transparent: #2b3a59b8;
+}

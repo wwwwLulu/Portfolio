@@ -1,4 +1,5 @@
 .navigation {
+    position: relative;
     &__checkbox {
         display: none;
     }
@@ -11,7 +12,7 @@
     }
     &__button {
         text-align: center;
-        background-color: $color-primary;
+        background-color: var(--color-primary);
         height: 7rem;
         width: 7rem;
         position: fixed;
@@ -19,7 +20,7 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba($color-secondary, 0.2);
+        box-shadow: 0 1rem 3rem rgba(var(--color-secondary), 0.2);
         cursor: pointer;
     }
 
@@ -53,7 +54,7 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary, darken($color-primary,30));
+        background-image: radial-gradient(var(--color-primary), black);
         transition: transform .8s;
     }
 
@@ -86,14 +87,14 @@
         letter-spacing: .2rem;
         font-size: 3rem;
         font-weight: 400;
-        color: $color-secondary;
+        color: var(--color-secondary);
         text-decoration: none;
         cursor: pointer;
         outline-offset: 2rem;
         transition: all .2s;
 
         &:hover {
-            outline: .5rem solid $color-secondary;
+            outline: .5rem solid var(--color-secondary);
             transform: scale(1.05) translateY(-.5rem);
         }
     }
@@ -108,7 +109,7 @@
         &, &::before, &::after {
             width: 3rem;
             height: .2rem;
-            background-color: darken($color-primary,30);
+            background-color: black;
             display: inline-block;
         }
         &::before, &::after {
@@ -121,6 +122,30 @@
         }
         &::after {
             top: .8rem;
+        }
+    }
+    &__themes {
+        position: fixed;
+        top: 6rem;
+        left: 6rem;
+        z-index: 3010;
+        height: 3rem;
+        display: flex;
+    }
+    &__theme {
+        border-bottom: .1rem solid black;
+        border-right: .1rem solid black;
+        width: 3rem;
+        height: 3rem;
+        border-radius: .5rem;
+        margin: 0 .6rem;
+        cursor: pointer;
+
+        &--1 {
+            background: #ffe15f;
+        }
+        &--2 {
+            background: #78a0d3;
         }
     }
 }
