@@ -212,6 +212,8 @@ body {
       background: #ffe15f; }
     .navigation__theme--2 {
       background: #78a0d3; }
+    .navigation__theme--3 {
+      background: #feffee; }
 
 @media (max-width: 850px) {
   .navigation__themes {

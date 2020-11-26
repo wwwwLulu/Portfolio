@@ -16,6 +16,13 @@ const themes = [
         secondary: '#2b3a59',
         secondaryT: "#2b3a59b8",
         background: 'url("../images/header_background2.jpg")'
+    },
+    //Lain Windows
+    {
+        primary: '#feffee',
+        secondary: '#212432',
+        secondaryT: "#212432b8",
+        background: 'url("../images/header_background3.png")'
     }
 ]
 
