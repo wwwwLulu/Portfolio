@@ -144,7 +144,7 @@ body {
     top: 6.5rem;
     right: 6.5rem;
     background-image: radial-gradient(var(--color-primary), black);
-    transition: transform .8s; }
+    transition: transform 0.8s; }
   .navigation__nav {
     height: 100vh;
     width: 100vw;
@@ -164,12 +164,12 @@ body {
     text-align: center; }
   .navigation__item {
     margin: 2.5rem;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
     font-size: 3rem;
     font-weight: 400;
     color: var(--color-secondary);
     text-decoration: none;
-    transition: all .2s; }
+    transition: all 0.2s; }
     .navigation__item:hover {
       transform: scale(1.05) translateY(-0.5rem); }
   .navigation__link {
@@ -178,20 +178,20 @@ body {
   .navigation__icon {
     position: relative;
     margin-top: 3.5rem;
-    transition: all .3s; }
+    transition: all 0.3s; }
     .navigation__icon, .navigation__icon::before, .navigation__icon::after {
       width: 3rem;
-      height: .2rem;
+      height: 0.2rem;
       background-color: black;
       display: inline-block; }
     .navigation__icon::before, .navigation__icon::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0; }
     .navigation__icon::before {
-      top: -.8rem; }
+      top: -0.8rem; }
     .navigation__icon::after {
-      top: .8rem; }
+      top: 0.8rem; }
   .navigation__themes {
     position: fixed;
     top: 6rem;
@@ -200,18 +200,18 @@ body {
     display: flex;
     flex-direction: row; }
   .navigation__theme {
-    border-bottom: .1rem solid black;
-    border-right: .1rem solid black;
+    border-bottom: 0.1rem solid black;
+    border-right: 0.1rem solid black;
     width: 3rem;
     height: 3rem;
-    border-radius: .5rem;
-    margin: .6rem;
+    border-radius: 0.5rem;
+    margin: 0.6rem;
     transition: all 1s;
     cursor: pointer; }
     .navigation__theme--1 {
       background: #ffe15f; }
     .navigation__theme--2 {
-      background: #78a0d3; }
+      background: #d89286; }
     .navigation__theme--3 {
       background: #feffee; }
 
