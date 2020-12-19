@@ -19,7 +19,7 @@
         height: 7rem;
         width: 7rem;
         position: fixed;
-        top: 6rem; 
+        top: 6rem;
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
@@ -58,7 +58,7 @@
         top: 6.5rem;
         right: 6.5rem;
         background-image: radial-gradient(var(--color-primary), black);
-        transition: transform .8s;
+        transition: transform 0.8s;
     }
 
     &__nav {
@@ -70,7 +70,7 @@
         z-index: 1500;
         opacity: 0;
         width: 0;
-        transition: all .8s cubic-bezier(0.68,-0.55,0.265,1.55);
+        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     &__list {
@@ -78,21 +78,21 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         text-align: center;
     }
 
     &__item {
         margin: 2.5rem;
-        letter-spacing: .2rem;
+        letter-spacing: 0.2rem;
         font-size: 3rem;
         font-weight: 400;
         color: var(--color-secondary);
         text-decoration: none;
-        transition: all .2s;
+        transition: all 0.2s;
 
         &:hover {
-            transform: scale(1.05) translateY(-.5rem);
+            transform: scale(1.05) translateY(-0.5rem);
         }
     }
     &__link {
@@ -102,24 +102,27 @@
     &__icon {
         position: relative;
         margin-top: 3.5rem;
-        transition: all .3s;
+        transition: all 0.3s;
 
-        &, &::before, &::after {
+        &,
+        &::before,
+        &::after {
             width: 3rem;
-            height: .2rem;
+            height: 0.2rem;
             background-color: black;
             display: inline-block;
         }
-        &::before, &::after {
-            content: "";
+        &::before,
+        &::after {
+            content: '';
             position: absolute;
             left: 0;
         }
         &::before {
-            top: -.8rem;
+            top: -0.8rem;
         }
         &::after {
-            top: .8rem;
+            top: 0.8rem;
         }
     }
     &__themes {
@@ -131,12 +134,12 @@
         flex-direction: row;
     }
     &__theme {
-        border-bottom: .1rem solid black;
-        border-right: .1rem solid black;
+        border-bottom: 0.1rem solid black;
+        border-right: 0.1rem solid black;
         width: 3rem;
         height: 3rem;
-        border-radius: .5rem;
-        margin: .6rem;
+        border-radius: 0.5rem;
+        margin: 0.6rem;
         transition: all 1s;
         cursor: pointer;
 
@@ -144,7 +147,7 @@
             background: #ffe15f;
         }
         &--2 {
-            background: #78a0d3;
+            background: #d89286;
         }
         &--3 {
             background: #feffee;
@@ -152,7 +155,7 @@
     }
 }
 
-@media(max-width: 850px) {
+@media (max-width: 850px) {
     .navigation {
         &__themes {
             flex-direction: column;
