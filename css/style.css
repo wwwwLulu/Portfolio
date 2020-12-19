@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
 :root {
-  --color-primary: #78a0d3;
-  --color-secondary: #2b3a59;
+  --color-primary: #d89286;
+  --color-secondary: #c75256;
   --color-white: #fff;
   --background-img: url('../images/header_background2.jpg');
-  --color-secondary-transparent: #2b3a59b8; }
+  --color-secondary-transparent: #c75256b8; }
 
 .text-primary {
   color: var(--color-primary); }
