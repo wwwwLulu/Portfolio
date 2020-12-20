@@ -409,9 +409,10 @@ body {
   color: var(--color-primary);
   display: flex;
   align-items: center;
+  padding: 2rem 0;
   flex-direction: column; }
   .skills__heading {
-    margin: 5rem 0; }
+    margin: 2rem 0; }
   .skills__container {
     display: flex;
     text-align: center; }
