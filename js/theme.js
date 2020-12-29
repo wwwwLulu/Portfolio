@@ -10,12 +10,12 @@ const themes = [
         secondaryT: 'rgba(34,34,34,0.8)',
         background: 'url("../images/header_background1.png")',
     },
-    //Red and Light Red
+    //Main
     {
-        primary: '#D89286',
-        secondary: '#C75256',
-        secondaryT: '#C75256b8',
-        background: 'url("../images/header_background2.jpg")',
+        primary: '#ACACB9',
+        secondary: '#3B4C61',
+        secondaryT: '#3B4C61b8',
+        background: 'url("../images/header_background2.jpeg")',
     },
     //Lain Windows
     {

@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap");
 :root {
-  --color-primary: #d89286;
-  --color-secondary: #c75256;
+  --color-primary: #acacb9;
+  --color-secondary: #3b4c61;
   --color-white: #fff;
-  --background-img: url('../images/header_background2.jpg');
+  --background-img: url('../images/header_background2.jpeg');
   --color-secondary-transparent: #c75256b8; }
 
 .text-primary {
@@ -211,7 +211,7 @@ body {
     .navigation__theme--1 {
       background: #ffe15f; }
     .navigation__theme--2 {
-      background: #d89286; }
+      background: #3b4c61; }
     .navigation__theme--3 {
       background: #feffee; }
 
