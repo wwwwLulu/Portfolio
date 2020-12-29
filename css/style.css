@@ -229,6 +229,11 @@ body {
   flex-direction: column; }
   .projects__heading {
     margin: 5rem; }
+  .projects__paragraph {
+    max-width: 50rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.2rem;
+    line-height: 2.5rem; }
   .projects__card-container {
     width: 100%;
     height: 100%;
