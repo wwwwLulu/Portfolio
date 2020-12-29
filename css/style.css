@@ -416,9 +416,8 @@ body {
   display: flex;
   align-items: center;
   padding: 2rem 0;
-  flex-direction: column; }
-  .skills__heading {
-    margin: 2rem 0; }
+  flex-direction: column;
+  margin: 1rem; }
   .skills__container {
     display: flex;
     text-align: center; }
@@ -457,6 +456,7 @@ body {
   .contact__textarea {
     min-height: 16rem; }
   .contact__button {
+    margin-top: 1rem;
     position: relative;
     border: none;
     padding: 1rem 1.5rem;

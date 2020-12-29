@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+
     &__heading {
         margin: 5rem 0;
     }
@@ -24,6 +24,7 @@
         min-height: 16rem;
     }
     &__button {
+        margin-top: 1rem;
         position: relative;
         border: none;
         padding: 1rem 1.5rem;
@@ -35,7 +36,7 @@
     }
 }
 
-@media(max-width: 680px) {
+@media (max-width: 680px) {
     .contact {
         &__form {
             width: 90%;
