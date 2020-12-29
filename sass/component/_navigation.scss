@@ -23,7 +23,7 @@
         right: 6rem;
         border-radius: 50%;
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba(var(--color-secondary), 0.2);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
         cursor: pointer;
     }
 
@@ -58,7 +58,7 @@
         top: 6.5rem;
         right: 6.5rem;
         background-image: radial-gradient(var(--color-primary), black);
-        transition: transform 0.8s;
+        transition: transform 0.5s;
     }
 
     &__nav {
@@ -70,7 +70,7 @@
         z-index: 1500;
         opacity: 0;
         width: 0;
-        transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
     &__list {

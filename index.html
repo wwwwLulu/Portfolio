@@ -17,333 +17,351 @@
     </head>
     <body>
         <div class="curtain"></div>
-
-        <nav class="navigation">
-            <input
-                type="checkbox"
-                class="navigation__checkbox"
-                id="navi-toggle"
-            />
-            <label for="navi-toggle" class="navigation__button">
-                <span class="navigation__icon">&nbsp;</span>
-            </label>
-            <div class="navigation__background">&nbsp;</div>
-            <div class="navigation__themes">
-                <div class="navigation__theme navigation__theme--1" id="0">
-                    &nbsp;
+        <div class="container">
+            <nav class="navigation">
+                <input
+                    type="checkbox"
+                    class="navigation__checkbox"
+                    id="navi-toggle"
+                />
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon">&nbsp;</span>
+                </label>
+                <div class="navigation__background">&nbsp;</div>
+                <div class="navigation__themes">
+                    <div class="navigation__theme navigation__theme--1" id="0">
+                        &nbsp;
+                    </div>
+                    <div class="navigation__theme navigation__theme--2" id="1">
+                        &nbsp;
+                    </div>
+                    <div class="navigation__theme navigation__theme--3" id="2">
+                        &nbsp;
+                    </div>
                 </div>
-                <div class="navigation__theme navigation__theme--2" id="1">
-                    &nbsp;
-                </div>
-                <div class="navigation__theme navigation__theme--3" id="2">
-                    &nbsp;
-                </div>
-            </div>
-            <nav class="navigation__nav">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="#header" class="navigation__link">About</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#projects" class="navigation__link"
-                            >Projects</a
-                        >
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#skills" class="navigation__link">Skills</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="#contact" class="navigation__link">Contact</a>
-                    </li>
-                </ul>
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__item">
+                            <a href="#header" class="navigation__link">About</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#projects" class="navigation__link"
+                                >Projects</a
+                            >
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#skills" class="navigation__link"
+                                >Skills</a
+                            >
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#contact" class="navigation__link"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
             </nav>
-        </nav>
 
-        <header class="header" id="header">
-            <section class="about">
-                <div class="about__avatar">
-                    <img
-                        class="about__img"
-                        src="https://avatars0.githubusercontent.com/u/71614569?s=460&u=7d832de7092b7b6cc547163b5fb1331ac94efc9c&v=4"
-                        alt="avatar"
-                    />
-                </div>
+            <header class="header" id="header">
+                <section class="about">
+                    <div class="about__avatar">
+                        <img
+                            loading="lazy"
+                            class="about__img"
+                            src="https://avatars0.githubusercontent.com/u/71614569?s=460&u=7d832de7092b7b6cc547163b5fb1331ac94efc9c&v=4"
+                            alt="avatar"
+                        />
+                    </div>
 
-                <p class="about__body">
-                    Hello, im Anthony, I’m an aspiring
-                    <span class="text-primary">web developer</span> who has a
-                    lot of love for
-                    <span class="text-primary">programming</span> ,
-                    <span class="text-primary">anime</span> and
-                    <span class="text-primary">collaboration.</span>
+                    <p class="about__body">
+                        Hello, im Anthony, I’m an aspiring
+                        <span class="text-primary">web developer</span> who has
+                        a lot of love for
+                        <span class="text-primary">programming</span> ,
+                        <span class="text-primary">anime</span> and
+                        <span class="text-primary">collaboration.</span>
+                    </p>
+
+                    <a href="#projects"
+                        ><button class="about__button">Learn More</button></a
+                    >
+
+                    <a href="https://github.com/Zallyy"
+                        ><i class="about__github fab fa-github text-primary"></i
+                    ></a>
+                </section>
+            </header>
+
+            <section class="projects" id="projects">
+                <h2 class="projects__heading heading text-secondary">
+                    Projects
+                </h2>
+                <p class="projects__paragraph">
+                    All my projects are minimal framework, I just pull up figma,
+                    do a little design and make it for the sheer joy of it. I
+                    enjoy the process of building things from the ground up!
                 </p>
 
-                <a href="#projects"
-                    ><button class="about__button">Learn More</button></a
-                >
+                <div class="projects__card-container">
+                    <div class="card">
+                        <h4 class="card__title">Anitrack</h4>
+                        <div class="card__img-container">
+                            <img
+                                loading="lazy"
+                                src="./images/project_anitrack.png"
+                                alt=""
+                                class="card__img"
+                            />
+                        </div>
+                        <p class="card__description">
+                            A website to add anime to a list with basic CRUD
+                            operations, learned a lot about Vue Router, and
+                            Server/Client interaction.
+                        </p>
+                        <a
+                            class="card__github"
+                            href="https://github.com/Zallyy/AniTrack"
+                            ><i
+                                class="card__github--icon fab fa-github text-secondary"
+                            ></i
+                            >View Code</a
+                        >
+                        <a
+                            href="https://smolanimelist.netlify.app/list/Zally"
+                            class="card__live-demo"
+                            >Demo</a
+                        >
+                    </div>
+                    <div class="card">
+                        <h4 class="card__title">This Website</h4>
+                        <div class="card__img-container">
+                            <img
+                                loading="lazy"
+                                src="./images/project_portfolio.png"
+                                alt=""
+                                class="card__img"
+                            />
+                        </div>
+                        <p class="card__description">
+                            My first portfolio'ish website.. is that a word. Had
+                            a lot of fun making this. Put together a lot of what
+                            I learned.
+                        </p>
+                        <a
+                            class="card__github"
+                            href="https://github.com/Zallyy/About-Me"
+                            ><i
+                                class="card__github--icon fab fa-github text-secondary"
+                            ></i
+                            >View Code</a
+                        >
+                        <a href="#header" class="card__live-demo">Demo</a>
+                    </div>
 
-                <a href="https://github.com/Zallyy"
-                    ><i class="about__github fab fa-github text-primary"></i
-                ></a>
+                    <div class="card">
+                        <h4 class="card__title">Guess the OP</h4>
+                        <div class="card__img-container">
+                            <img
+                                loading="lazy"
+                                src="./images/project_guessop.png"
+                                alt="guess op"
+                                class="card__img"
+                            />
+                        </div>
+                        <p class="card__description">
+                            I learned a lot about <b>Vue</b> and asyncronous
+                            programming during this project, it was a ton of
+                            fun!
+                        </p>
+                        <a
+                            class="card__github"
+                            href="https://github.com/Zallyy/Guess-the-Anime-OP"
+                            ><i
+                                class="card__github--icon fab fa-github text-secondary"
+                            ></i
+                            >View Code</a
+                        >
+                        <a
+                            href="https://guessop.netlify.app/"
+                            class="card__live-demo"
+                            >Demo</a
+                        >
+                    </div>
+
+                    <div class="card">
+                        <h4 class="card__title">Anime Tierlist Generator</h4>
+                        <div class="card__img-container">
+                            <img
+                                loading="lazy"
+                                src="./images/project_animetier.png"
+                                alt="guess op"
+                                class="card__img"
+                            />
+                        </div>
+                        <p class="card__description">
+                            Older project hosted on my old github account, which
+                            was probably the most I ever worked. Learned a lot
+                            from others, since I had a few people contribute.
+                            Test: 'Qnnie'
+                        </p>
+                        <a
+                            class="card__github"
+                            href="https://github.com/Qnnie/AnimeTierList"
+                            ><i
+                                class="card__github--icon fab fa-github text-secondary"
+                            ></i
+                            >View Code</a
+                        >
+                        <a
+                            href="http://animetierlist.herokuapp.com/"
+                            class="card__live-demo"
+                            >Demo</a
+                        >
+                    </div>
+                    <div class="card">
+                        <h4 class="card__title">Pomodoro Counter</h4>
+                        <div class="card__img-container">
+                            <img
+                                loading="lazy"
+                                src="./images/project_pomodoro.png"
+                                alt="guess op"
+                                class="card__img"
+                            />
+                        </div>
+                        <p class="card__description">
+                            A simple JS project to learn about classes and
+                            asyncronous programming with timers. I didn't
+                            realize there was a clearInterval() function at the
+                            time.. That was rough.
+                        </p>
+                        <a
+                            class="card__github"
+                            href="https://github.com/Zallyy/Higurashi-Pomodoro-Counter"
+                            ><i
+                                class="card__github--icon fab fa-github text-secondary"
+                            ></i
+                            >View Code</a
+                        >
+                        <a
+                            href="https://zallyy.github.io/Higurashi-Pomodoro-Counter/"
+                            class="card__live-demo"
+                            >Demo</a
+                        >
+                    </div>
+                    <div class="card">
+                        <h4 class="card__title">Memory Game</h4>
+                        <div class="card__img-container">
+                            <img
+                                loading="lazy"
+                                src="./images/project_memorygame.png"
+                                alt="guess op"
+                                class="card__img"
+                            />
+                        </div>
+                        <p class="card__description">
+                            My first project putting everything together,
+                            learned
+                            <strong>Jquery</strong> while doing it.
+                        </p>
+                        <a
+                            class="card__github"
+                            href="https://github.com/Qnnie/AnimeMemoryGame"
+                            ><i
+                                class="card__github--icon fab fa-github text-secondary"
+                            ></i
+                            >View Code</a
+                        >
+                        <a
+                            href="https://qnnie.github.io/AnimeMemoryGame/home.html"
+                            class="card__live-demo"
+                            >Demo</a
+                        >
+                    </div>
+                </div>
             </section>
-        </header>
 
-        <section class="projects" id="projects">
-            <h2 class="projects__heading heading text-secondary">Projects</h2>
-            <p class="projects__paragraph">
-                All my projects are minimal framework, I just pull up figma, do
-                a little design and make it for the sheer joy of it. I enjoy the
-                process of building things from the ground up!
-            </p>
+            <section class="skills" id="skills">
+                <h2 class="skills__heading heading text-primary">Skills</h2>
 
-            <div class="projects__card-container">
-                <div class="card">
-                    <h4 class="card__title">Anitrack</h4>
-                    <div class="card__img-container">
-                        <img
-                            src="./images/project_anitrack.png"
-                            alt=""
-                            class="card__img"
-                        />
+                <div class="skills__container">
+                    <div class="skills__category">
+                        <h3 class="skills__label">Good.. I think</h3>
+                        <ul class="skills__list">
+                            <li>Git</li>
+                            <li>Figma</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Sass</li>
+                            <li>Javascript</li>
+                            <li>Vue</li>
+                        </ul>
                     </div>
-                    <p class="card__description">
-                        A website to add anime to a list with basic CRUD
-                        operations, learned a lot about Vue Router, and
-                        Server/Client interaction.
-                    </p>
-                    <a
-                        class="card__github"
-                        href="https://github.com/Zallyy/AniTrack"
-                        ><i
-                            class="card__github--icon fab fa-github text-secondary"
-                        ></i
-                        >View Code</a
-                    >
-                    <a
-                        href="https://smolanimelist.netlify.app/list/Zally"
-                        class="card__live-demo"
-                        >Demo</a
-                    >
-                </div>
-                <div class="card">
-                    <h4 class="card__title">This Website</h4>
-                    <div class="card__img-container">
-                        <img
-                            src="./images/project_portfolio.png"
-                            alt=""
-                            class="card__img"
-                        />
+
+                    <div class="skills__category">
+                        <h3 class="skills__label">Beginner</h3>
+                        <ul class="skills__list">
+                            <li>NodeJS</li>
+                            <li>SQL</li>
+                        </ul>
                     </div>
-                    <p class="card__description">
-                        My first portfolio'ish website.. is that a word. Had a
-                        lot of fun making this. Put together a lot of what I
-                        learned.
-                    </p>
-                    <a
-                        class="card__github"
-                        href="https://github.com/Zallyy/About-Me"
-                        ><i
-                            class="card__github--icon fab fa-github text-secondary"
-                        ></i
-                        >View Code</a
-                    >
-                    <a href="#header" class="card__live-demo">Demo</a>
-                </div>
 
-                <div class="card">
-                    <h4 class="card__title">Guess the OP</h4>
-                    <div class="card__img-container">
-                        <img
-                            src="./images/project_guessop.png"
-                            alt="guess op"
-                            class="card__img"
-                        />
+                    <div class="skills__category">
+                        <h3 class="skills__label">Non Web Dev.</h3>
+                        <ul class="skills__list">
+                            <li>Linux / Debian</li>
+                            <li>Light C++</li>
+                        </ul>
                     </div>
-                    <p class="card__description">
-                        I learned a lot about <b>Vue</b> and asyncronous
-                        programming during this project, it was a ton of fun!
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h2 class="contact__heading heading text-secondary">Contact</h2>
+
+                <form
+                    class="contact__form"
+                    name="contact"
+                    method="POST"
+                    netlify-honeypot="bot-field"
+                    data-netlify="true"
+                >
+                    <p class="hidden" hidden>
+                        <label
+                            >Don’t fill this out if you're human:
+                            <input name="bot-field"
+                        /></label>
                     </p>
-                    <a
-                        class="card__github"
-                        href="https://github.com/Zallyy/Guess-the-Anime-OP"
-                        ><i
-                            class="card__github--icon fab fa-github text-secondary"
-                        ></i
-                        >View Code</a
-                    >
-                    <a
-                        href="https://guessop.netlify.app/"
-                        class="card__live-demo"
-                        >Demo</a
-                    >
-                </div>
-
-                <div class="card">
-                    <h4 class="card__title">Anime Tierlist Generator</h4>
-                    <div class="card__img-container">
-                        <img
-                            src="./images/project_animetier.png"
-                            alt="guess op"
-                            class="card__img"
-                        />
-                    </div>
-                    <p class="card__description">
-                        Older project hosted on my old github account, which was
-                        probably the most I ever worked. Learned a lot from
-                        others, since I had a few people contribute. Test:
-                        'Qnnie'
+                    <p>
+                        <label class="contact__email"
+                            >Email: <input type="text" name="email" required
+                        /></label>
                     </p>
-                    <a
-                        class="card__github"
-                        href="https://github.com/Qnnie/AnimeTierList"
-                        ><i
-                            class="card__github--icon fab fa-github text-secondary"
-                        ></i
-                        >View Code</a
-                    >
-                    <a
-                        href="http://animetierlist.herokuapp.com/"
-                        class="card__live-demo"
-                        >Demo</a
-                    >
-                </div>
-                <div class="card">
-                    <h4 class="card__title">Pomodoro Counter</h4>
-                    <div class="card__img-container">
-                        <img
-                            src="./images/project_pomodoro.png"
-                            alt="guess op"
-                            class="card__img"
-                        />
-                    </div>
-                    <p class="card__description">
-                        A simple JS project to learn about classes and
-                        asyncronous programming with timers. I didn't realize
-                        there was a clearInterval() function at the time.. That
-                        was rough.
+                    <p>
+                        <label class="contact__message"
+                            >Message:
+                            <textarea
+                                class="contact__textarea"
+                                name="message"
+                                required
+                            ></textarea>
+                        </label>
                     </p>
-                    <a
-                        class="card__github"
-                        href="https://github.com/Zallyy/Higurashi-Pomodoro-Counter"
-                        ><i
-                            class="card__github--icon fab fa-github text-secondary"
-                        ></i
-                        >View Code</a
-                    >
-                    <a
-                        href="https://zallyy.github.io/Higurashi-Pomodoro-Counter/"
-                        class="card__live-demo"
-                        >Demo</a
-                    >
-                </div>
-                <div class="card">
-                    <h4 class="card__title">Memory Game</h4>
-                    <div class="card__img-container">
-                        <img
-                            src="./images/project_memorygame.png"
-                            alt="guess op"
-                            class="card__img"
-                        />
-                    </div>
-                    <p class="card__description">
-                        My first project putting everything together, learned
-                        <strong>Jquery</strong> while doing it.
+                    <p>
+                        <button class="contact__button" type="submit">
+                            Send
+                        </button>
                     </p>
-                    <a
-                        class="card__github"
-                        href="https://github.com/Qnnie/AnimeMemoryGame"
-                        ><i
-                            class="card__github--icon fab fa-github text-secondary"
-                        ></i
-                        >View Code</a
-                    >
-                    <a
-                        href="https://qnnie.github.io/AnimeMemoryGame/home.html"
-                        class="card__live-demo"
-                        >Demo</a
-                    >
-                </div>
-            </div>
-        </section>
+                </form>
+            </section>
 
-        <section class="skills" id="skills">
-            <h2 class="skills__heading heading text-primary">Skills</h2>
-
-            <div class="skills__container">
-                <div class="skills__category">
-                    <h3 class="skills__label">Good.. I think</h3>
-                    <ul class="skills__list">
-                        <li>Git</li>
-                        <li>Figma</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Sass</li>
-                        <li>Javascript</li>
-                        <li>Vue</li>
-                    </ul>
-                </div>
-
-                <div class="skills__category">
-                    <h3 class="skills__label">Beginner</h3>
-                    <ul class="skills__list">
-                        <li>NodeJS</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-
-                <div class="skills__category">
-                    <h3 class="skills__label">Non Web Dev.</h3>
-                    <ul class="skills__list">
-                        <li>Linux / Debian</li>
-                        <li>Light C++</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact" id="contact">
-            <h2 class="contact__heading heading text-secondary">Contact</h2>
-
-            <form
-                class="contact__form"
-                name="contact"
-                method="POST"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-            >
-                <p class="hidden" hidden>
-                    <label
-                        >Don’t fill this out if you're human:
-                        <input name="bot-field"
-                    /></label>
-                </p>
-                <p>
-                    <label class="contact__email"
-                        >Email: <input type="text" name="email" required
-                    /></label>
-                </p>
-                <p>
-                    <label class="contact__message"
-                        >Message:
-                        <textarea
-                            class="contact__textarea"
-                            name="message"
-                            required
-                        ></textarea>
-                    </label>
-                </p>
-                <p>
-                    <button class="contact__button" type="submit">Send</button>
-                </p>
-            </form>
-        </section>
-
-        <footer class="footer">
-            <a href="https://github.com/Zallyy"
-                ><i class="footer__github fab fa-github text-primary"></i
-            ></a>
-            <h4 class="footer__copyright">©2020 Zally</h4>
-        </footer>
+            <footer class="footer">
+                <a href="https://github.com/Zallyy"
+                    ><i class="footer__github fab fa-github text-primary"></i
+                ></a>
+                <h4 class="footer__copyright">©2020 Zally</h4>
+            </footer>
+        </div>
 
         <script src="./js/navigation.js"></script>
         <script src="./js/theme.js"></script>
