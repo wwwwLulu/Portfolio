@@ -235,8 +235,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    justify-content: center;
     padding: 3rem; }
   .projects .card {
     margin: 4rem;
