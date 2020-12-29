@@ -37,6 +37,10 @@ nav_theme.forEach((theme) => {
             '--background-img',
             themes[e.target.id].background
         )
+        root.style.setProperty(
+            '--color-secondary-transparent',
+            themes[e.target.id].secondaryT
+        )
         curtain.classList.add('animate')
         setTimeout(() => {
             curtain.classList.remove('animate')

@@ -4,7 +4,7 @@
   --color-secondary: #3b4c61;
   --color-white: #fff;
   --background-img: url('../images/header_background2.jpeg');
-  --color-secondary-transparent: #c75256b8; }
+  --color-secondary-transparent: #3b5c61b8; }
 
 .text-primary {
   color: var(--color-primary); }
